@@ -26,13 +26,14 @@ def get_list_element(my_list, index):
 
 
 # Example calls for calculate_average
-data1 = [10, 20, 30, 40]
+data1 = [10, 20, 30, 40, 50]
 data2 = [5, 15]
-data3 = []
+data3 = [] # This will cause an error
 
-print("Average of data1:", calculate_average(data1))
-print("Average of data2:", calculate_average(data2))
-print("Average of data3:", calculate_average(data3))
+print(f"Average of data1: {calculate_average(data1)}")
+print(f"Average of data2: {calculate_average(data2)}")
+print(f"Average of data3: {calculate_average(data3)}")
+
 
 
 # Example calls for get_list_element
