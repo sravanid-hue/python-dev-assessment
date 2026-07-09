@@ -14,7 +14,7 @@ def fetch_and_display_users(num_users):
         users = response.json()
 
         if not isinstance(users, list):
-            print("Error: Unexpected JSON structure.")
+            print("Error: Unexpected JSON structure")
             return None
 
         for user in users[:num_users]:
@@ -29,17 +29,17 @@ def fetch_and_display_users(num_users):
                 print("-" * 30)
 
             except KeyError:
-                print("Error: Missing expected user information.")
+                print("Error: Missing user information")
                 return None
 
         return users[:num_users]
 
     except requests.exceptions.RequestException as error:
-        print(f"Network error occurred: {error}")
+        print(f"Network error: {error}")
         return None
 
     except ValueError:
-        print("Error: Invalid JSON response.")
+        print("Error: Invalid JSON response")
         return None
 
 
