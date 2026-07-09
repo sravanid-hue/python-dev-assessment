@@ -44,4 +44,5 @@ def fetch_and_display_users(num_users):
 
 
 # Example usage
-fetch_and_display_users(3)
+fetch_and_display_users(4)
+fetch_and_display_users(16)
